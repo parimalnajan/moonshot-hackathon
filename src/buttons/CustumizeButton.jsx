@@ -6,14 +6,18 @@
 
 
 const CustumizeButton = () => {
+  const [buttonStyles,setbuttonStyles] = useState({color:"red",backgroundColor:"gray"});
 
   const button = `
+ import React, { useState } from 'react'
+
   export default function App() {
-    return <button >
+  const [buttonStyles,setbuttonStyles] = useState({color:"red",backgroundColor:"gray"});
+
+    return <button style={buttonStyles}>
   button
 </button>
 }`        
-      const [buttonStyles,setbuttonStyles] = useState({color:"red",backgroundColor:"gray"});
     
       const styleKeys= Object.keys(buttonStyles)
       console.log(styleKeys)
@@ -37,9 +41,13 @@ const CustumizeButton = () => {
           bg color
           </div>
           
-        <div>---make this a nice card---
-          <div> {styleKeys.map((x,i)=><div key={i} >{x}:{buttonStyles[x]}</div>)}</div>
            </div>
+
+           <br/>
+           <br/>
+        <div style={{border:"1px solid silver", display:"flex", flexDirection:'column'}}> 
+        <div>Style snippet: </div>
+          <div> {styleKeys.map((x,i)=><div key={i} >{x}:{buttonStyles[x]}</div>)}</div>
            </div>
         
     </div>

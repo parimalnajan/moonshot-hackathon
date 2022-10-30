@@ -4,14 +4,12 @@ import './App.css';
 import  CustomizeButton from './buttons/CustumizeButton.jsx';
 
 function App() {
-  const [db,setDb] = useState([
-    
-  ])
+  
 
 
   return (
     <div className="App">
-    lets hack
+    <CustomizeButton/>
     </div>
   );
 }
