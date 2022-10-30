@@ -66,7 +66,7 @@ const CustumizeButton = () => {
 
 
        <div style={{paddingLeft:"40px",paddingRight:"40px"}}>
-       <div>component templates -click to open in editor-</div>
+       <div style={{fontWeight:"bold",paddingBottom:"10px"}}>component templates -click to open in editor-</div>
           <button style={buttonStyles}>button</button>
           <button
             onClick={() => {
@@ -78,7 +78,7 @@ const CustumizeButton = () => {
 
           <br />
           <br />
-          <button style={{ padding: "4px" }}>- input form -</button>
+          <button style={{ padding: "4px" ,marginRight:"10px" }}>- input form -</button>
           <button
             onClick={() => {
               setEditorState(form);
@@ -89,7 +89,7 @@ const CustumizeButton = () => {
 
           <br />
           <br />
-          <button style={{ padding: "4px" }}>- lists -</button>
+          <button style={{ padding: "4px" ,marginRight:"10px" }}>- lists -</button>
           <button
             onClick={() => {
               setEditorState(list);
@@ -100,7 +100,7 @@ const CustumizeButton = () => {
 
           <br />
           <br />
-          <button style={{ padding: "4px" }}>- nav elements -</button>
+          <button style={{ padding: "4px",marginRight:"10px" }}>- nav elements -</button>
           <button
             onClick={() => {
               setEditorState(button);
