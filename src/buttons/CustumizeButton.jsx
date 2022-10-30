@@ -65,7 +65,8 @@ const CustumizeButton = () => {
 
 
 
-        <div>component templates -click to open in editor-</div>
+       <div style={{paddingLeft:"40px",paddingRight:"40px"}}>
+       <div>component templates -click to open in editor-</div>
           <button style={buttonStyles}>button</button>
           <button
             onClick={() => {
@@ -110,13 +111,14 @@ const CustumizeButton = () => {
 
           <br />
           <br />
-          <div>Style snippet: </div>
+          <div style={{fontWeight:"bold",marginBottom:"10px"}} >Style snippet: </div>
           <div
             style={{
               border: "1px solid silver",
               display: "flex",
               flexDirection: "column",
               padding: "16px",
+              borderRadius:"8px",
             }}
           >
             <div>
@@ -128,6 +130,7 @@ const CustumizeButton = () => {
               ))}
             </div>
           </div>
+       </div>
         </div>
       );
     }
