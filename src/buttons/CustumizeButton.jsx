@@ -72,6 +72,7 @@ const CustumizeButton = () => {
             onClick={() => {
               setEditorState(button);
             }}
+            style={{marginLeft:"10px"}}
           >
             edit
           </button>
